@@ -1,36 +1,40 @@
-/*Funciones*/
 
-const saludar= function (nombre){
-    return `Hola, ${nombre}`;
+// Funciones en JS
+// const saludar = function( nombre ) {
+//     return `Hola, ${ nombre }`;
+// }
+
+const saludar2 = ( nombre ) => {
+    return `Hola, ${ nombre }`;
 }
 
-const saludar2 = (nombre) =>{
-    return `Hola, ${nombre}`;
-}
-const saludar3 = (nombre) =>`Hola, ${nombre}`;
-const saludar4 = () =>`Hola mundo`;
+const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
+const saludar4 = () => `Hola Mundo`;
+
+// console.log( saludar('Goku') )
+
+console.log( saludar2('Vegeta') );
+console.log( saludar3('Goku') );
+console.log( saludar4() );
 
 
-
-console.log(saludar('Jose '));
-console.log(saludar2('Jose '));
-console.log(saludar3('Jose '));
-console.log(saludar4());
-
-
-const getUser = () =>({
+const getUser = () => ({
         uid: 'ABC123',
-        username: 'El_Papi123sd'
-    })
+        username: 'El_Papi1502'
+});
+
 
 const user = getUser();
 console.log(user);
 
-const gerUsuarioActivo = (nombre) =>({
-        uid:'AVasd2',
-        nombre: nombre
-    })
+// Tarea
+const getUsuarioActivo = ( nombre ) =>({
+    uid: 'ABC567',
+    username: nombre
+})
+
+const usuarioActivo = getUsuarioActivo('Fernando');
+console.log( usuarioActivo );
 
 
-const usuarioActivo = gerUsuarioActivo('José');
-console.log(usuarioActivo);
+
